@@ -5,16 +5,19 @@ BEGIN{
 }
 
 {
- if($13=="South"){
-  a[$11","]+=$21
+ if($13=="Central"){
+  a[$11]+=$21
  }
 }
 
 END{
- n = asort(a, b);
- j=1;
+
  for (i in a){
-  if(j>2) break;
-  else print i, b[j]; j++;
+  b[a[i]]=i;
+ }
+ asort(a);
+ for(i in a){
+  if(i>2) break;
+  else print b[a[i]], a[i];
  }
 }

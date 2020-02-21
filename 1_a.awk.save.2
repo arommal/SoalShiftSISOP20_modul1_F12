@@ -1,0 +1,18 @@
+#!/bin/awk -f
+
+BEGIN{
+ FS=","
+}
+
+{
+ a[$13]+=$21;
+}
+
+END{
+ asort(a, b);
+ for(i=1 ; i<length(b) ; i++)
+ {
+  print b[i], a[b[i]
+];
+ }
+}
