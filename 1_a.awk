@@ -16,8 +16,5 @@ END{
   j++;
  }
  asort(a);
- for(i in a)
- {
-  print a[i], b[a[i]]
- }
+ print b[a[2]];
 }
