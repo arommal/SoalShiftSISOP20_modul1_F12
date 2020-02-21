@@ -1,0 +1,2 @@
+crontab -e
+5 6-23/8 * * 0-5 /home/insanity/Documents/sisop/shift1/3/no3.sh
