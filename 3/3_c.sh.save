@@ -1,0 +1,15 @@
+#!/bin/bash
+
+dir="./3c"
+
+for file in ${dir}
+do
+ for filex in ${dir}
+ do
+  if [ $( diff 
+${file}" {$filex} ) == 0 ]
+  then
+   mv ${filex} ./3c/duplikat
+  fi
+ done
+done
