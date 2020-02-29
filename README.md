@@ -1,4 +1,29 @@
 # SoalShiftSISOP20_modul1_F12
+1. (a) Mencari 1 region dengan profit paling sedikit
+Penyelesaian:
+- Mengiterasi dari data awal hingga akhir.
+- Menambahkan profit yang sesuai untuk tiap jenis region ke dalam array a yang ber-index masing-masing region.
+- Meng-assign index array a (nama-nama region) ke array b. Hal ini dilakukan karena nilai array a akan diurutkan.
+- Mengurutkan nilai array a. Hal ini menyebabkan index array a berubah menjadi index angka 1 - n.
+- Mencetak nilai array b yang index-nya adalah array a index ke-2.
+- Hasil yang dicetak adalah region "Central".
+
+   (b) Mencari 2 state dari region (1a) dengan profit paling sedikit
+Penyelesaian:
+- Dari hasil (1a), diiterasi untuk data yang regionnya adalah Central.
+- Untuk tiap data, ditambahkan profit yang sesuai untuk tiap jenis state dalam region Central ke dalam array a yang ber-index masing-masing state.
+- Meng-assign index array a (nama-nama state) ke array b. Hal ini dilakukan agar index array a tetap tersimpan karena setelahnya array a akan diurutkan berdasarkan nilainya.
+- Mengurutkan nilai array a. Hal ini menyebabkan index array a berubah menjadi index angka 1 - n.
+- Mencetak nilai array b yang index-nya adalah array a sebanyak 2 kali.
+- Hasil yang dicetak adalah state "Texas" dan "Illinois"
+
+   (c) Mencari 10 produk dari state-state (1b) dengan profit paling sedikit
+- Dari hasil (1b), diiterasi untuk data yang state-nya adalah Texas atau Illinois.
+- Untuk tiap data, ditambahkan profit yang sesuai untuk tiap jenis produk dalam state Texas atau Illinois ke dalam array profit_a yang ber-index nama produk.
+- Array profit_a diurutkan ke array b.
+- Iterasi array profit_a dan di dalamanya iterasi array b. Jika nilai profit_a sama dengan nilai b, maka disimpulkan produk yang terdapat di index array profit_a adalah produk dengan nilai terkecil. Maka index tersebut disimpan di array baru, yaitu c.
+- Mencetak 10 nilai pertama dari array c.
+ 
 2.  (a) membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka. 
 
     (b) Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan HANYA berupa alphabet.
